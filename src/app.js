@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.static(static_path));
 app.set("view engine", "hbs");
 
-app.get("/index", (req, res)=>{
+app.get("/", (req, res)=>{
     res.render("index")
 });
 app.get("/register", (req, res)=>{
