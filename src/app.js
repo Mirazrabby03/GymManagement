@@ -40,7 +40,7 @@ app.post("/register", async (req,res)=>{
             confirmpassword: req.body.confirmpassword
         })
         const register = await registerMember.save(); 
-        res.status(201).render("index")
+        res.status(201).render("/")
     }
 
        else{
